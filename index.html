@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <button id="viewTodosBtn" class="active">Todos</button>
+            <button id="createTodoBtn">Create Todo</button>
+        </nav>
+        <div id="viewTodosPage" class="page active">
+            <ul id="todoList">
+                <!-- Todo items will be added here dynamically -->
+            </ul>
+        </div>
+        <div id="createTodoPage" class="page">
+            <form id="todoForm">
+                <input type="text" id="todoInput" placeholder="Enter a new todo" required>
+                <button type="submit">Add Todo</button>
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/app.js" defer></script>
+</body>
+</html>
